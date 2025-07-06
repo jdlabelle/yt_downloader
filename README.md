@@ -20,3 +20,9 @@ You need the FFMPEG binary. Follow the instructions located [here](https://trac.
 python3 -m venv .venv
 python3 -m pip install -r requirements.txt
 ```
+
+## Usage
+
+```bash
+python extractor.py <url>
+```
