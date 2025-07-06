@@ -19,6 +19,10 @@ def extract(URL):
     the audio in WAV format.
     """
     ydl_opts = {
+            # Limit best video to avc/H.264 codecs due to graphics card.
+            # Only newer graphics cards support the best codecs, namely AV1.
+            # Comment out if this is not an issue for you.
+            'format_sort': ['vcodec:avc'],
             'postprocessors':[{
                 'key': 'FFmpegExtractAudio',
                 'preferredcodec': 'wav',
