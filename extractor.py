@@ -28,12 +28,11 @@ def extract(URL):
             'keepvideo': True,
             'restrictfilenames': True,
             # Specify output dir paths
-            'paths': {
-                'home': '~/warp_storm/yt_dl/downloads',
-                #'temp': '~/warp_storm/yt_dl/intermediate'
-                      },
+            # 'paths': {
+            #     'home': '~/MyVideos/',
+                      # },
             'outtmpl': {
-                'default': "%(title)s.%(ext)s",
+                'default': "downloads/%(title)s.%(ext)s",
                 },
             # 'progress_hooks': [progress_hook],
             }
